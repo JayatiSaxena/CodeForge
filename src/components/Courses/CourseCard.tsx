@@ -1,17 +1,9 @@
 import { Link } from "react-router-dom";
 
+import type { Course } from "../../types/Courses";
+
 interface CourseCardProps {
-  course: {
-    id: number;
-    title: string;
-    description: string;
-    image_url: string;
-    instructor: string;
-    category: string;
-    duration: string;
-    price: number;
-    rating?: number;
-  };
+  course: Course;
 }
 
 export default function CourseCard({ course }: CourseCardProps) {
