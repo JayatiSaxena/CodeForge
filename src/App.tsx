@@ -11,7 +11,7 @@ import Courses from "./components/Courses/Courses";
 import CourseDetails from "./components/Courses/CourseDetails";
 
 import ProtectedRoute from "./components/ProtectedRoute";
-import { AuthProvider } from "./context/AuthContext";
+// import { AuthProvider } from "./context/AuthContext";
 
 function App() {
   return (
