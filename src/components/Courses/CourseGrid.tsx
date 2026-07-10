@@ -1,5 +1,5 @@
 import CourseCard from "./CourseCard";
-import type { Course } from "../../types/course";
+import type { Course } from "../../types/Courses";
 
 interface CourseGridProps {
   courses: Course[];
