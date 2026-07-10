@@ -10,7 +10,7 @@ export default function CourseCard({ course }: CourseCardProps) {
   return (
     <div className="bg-white rounded-2xl shadow-md overflow-hidden transition duration-300 hover:shadow-xl hover:-translate-y-1">
       <img
-        src={course.image_url}
+        src={course.thumbnail}
         alt={course.title}
         className="w-full h-52 object-cover"
       />
@@ -37,16 +37,11 @@ export default function CourseCard({ course }: CourseCardProps) {
             <strong>Duration:</strong> {course.duration}
           </p>
 
-          {course.rating && (
-            <p>
-              <strong>Rating:</strong> ⭐ {course.rating}
-            </p>
-          )}
         </div>
 
         <div className="flex items-center justify-between mt-6">
           <span className="text-2xl font-bold text-blue-600">
-            ₹{course.price}
+            {course.level}
           </span>
 
           <Link
